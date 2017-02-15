@@ -1,0 +1,19 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently -p \"[{name}]\" -n \"webpack,server,opn\" \"webpack --watch\" \"static-server . \" \"opn http://localhost:9080\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^3.3.0",
+    "jquery": "^3.1.1",
+    "opn-cli": "^3.1.0",
+    "static-server": "^2.0.4",
+    "webpack": "^2.2.1"
+  }
+}
